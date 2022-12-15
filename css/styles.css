@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../imagens/bg9.jpg);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0.527);
+  width: 350px;
+  padding-top: 50px 20px;
+  text-align: center;
+  border-radius: 20% 0;
+  height: 325px;
+  box-shadow: 1px 2px 10px #000, 3px 6px 20px #000;
+
+}
+
+.container h2{
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 20px;
+  color: #ffff;
+}
+
+.input-field{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form label{
+  left: 60px;
+  top: 5px;
+  position: absolute;
+  color: #ffff;
+  transform: translateY(18px);
+  transition: 0.3s ease-in-out;
+}
+
+input:focus + label{
+  transform: translateY(-14px) scale(0.95);
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px #fff;
+}
+
+form input{
+  width: 70%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffff;
+  height: 46px;
+  color: white;
+}
+
+form input:focus{
+  border-bottom: 2px solid #fff;
+
+}
+
+input:not(:placeholder-shown) + label{
+  transform: translateY(-14px) scale(0.95);
+  font-weight: bold;
+
+
+}
+
+input:not(:placeholder-shown){
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+
+input::placeholder{
+  color:transparent;
+}
+
+.center button{
+  color: #fff;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 #333;
+  transition: 0.10s ease-in-out;
+
+}
+
+.center button:active{
+  scale: 0.95;
+  box-shadow: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 20px #fff;
+
+}
+
+.links {
+    margin: 20px;
+
+  
+  
+}
+.links a{
+  color: white;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+
+.links a:hover{
+  text-decoration: underline;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px #fff;
+}
+
+
+
+
+
+
+
+
